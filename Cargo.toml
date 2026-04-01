@@ -1,6 +1,6 @@
 [package]
 name = "earthquake"
-version = "0.3.3"
+version = "0.3.4"
 edition = "2024"
 description = "A credential stuffing framework designed for security testing"
 license = "GPL-3.0"
@@ -11,7 +11,7 @@ keywords = ["security", "testing", "credential-stuffing"]
 
 [dependencies]
 tokio = { version = "1", features = ["full"] }
-reqwest = { version = "0.13.2", features = [
+reqwest = { version = "0.12", features = [
   "json",
   "cookies",
   "socks",
