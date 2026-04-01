@@ -115,11 +115,6 @@ impl Proxy {
         ReqwestProxy::all(&proxy_url).map_err(|e| Error::InvalidProxy(e.to_string()))
     }
 
-    pub fn to_rquest_proxy(&self) -> Result<rquest::Proxy> {
-        let proxy_url = self.to_url();
-        rquest::Proxy::all(&proxy_url).map_err(|e| Error::InvalidProxy(e.to_string()))
-    }
-
     pub fn mark_used(&mut self) {
         self.last_used = Some(Instant::now());
     }

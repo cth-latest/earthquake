@@ -1,6 +1,6 @@
 [package]
 name = "earthquake"
-version = "0.3.2"
+version = "0.3.3"
 edition = "2024"
 description = "A credential stuffing framework designed for security testing"
 license = "GPL-3.0"
@@ -39,5 +39,3 @@ async-trait = "0.1"
 url = "2.5"
 toml = "0.8"
 parking_lot = "0.12"
-rquest = "5"
-rquest-util = "2"
